@@ -1,5 +1,6 @@
 package com.studentwk4.randomguess
 
+import android.app.Activity
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+
 //test
 class MainActivity : AppCompatActivity() {
 
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         //var number = (Math.random () * 100001) .toInt()
         //Toast is an easy way to alert user. Shows up on bottom of app
         Toast.makeText(this, "Number to remember: ${number}", Toast.LENGTH_LONG).show()
+
         val txtGuess = findViewById<EditText>(R.id.txtGuess)
         val btnGuess = findViewById<Button>(R.id.btnGuess)
         val btnToast = findViewById<Button>(R.id.btnToast)
